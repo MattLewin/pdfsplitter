@@ -1,0 +1,9 @@
+[tools]
+python = "3.14" # track latest 3.14.x
+uv = "latest"
+
+[settings]
+python.uv_venv_auto = "create|source" # uv auto-manages venvs when uv.lock is present
+
+[env]
+_.python.venv = { path = ".venv", create = true } # create/use .venv here
